@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>مطعم سفينة البحار للمأكولات البحرية</title>
+</head>
+<body>
+
+    <!-- 1. كود الـ HEADER الحقيقي -->
+    <header id="main-header">
+        <div class="logo">
+            <a href="HeaderRes.html"><span>⚓ سفينة البحار</span></a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="HeaderRes.html">الرئيسية</a></li>
+                <li><a href="MenuRe.html">المنيو</a></li>
+                <li><a href="WhyChooseUsRes.html">لماذا تختارنا؟</a></li>
+                <li><a href="About UsRes.html">من نحن</a></li>
+                <li><a href="ContactRes.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="order-action">
+            <a href="ContactRes.html" class="btn-order">اطلب الآن 📞</a>
+        </div>
+    </header>
+
+    <!-- 2. كود الـ HERO الحقيقي -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>أعماق البحر في طبقك.. طازج، شهي، ومقرمش!</h1>
+            <p>استمتع بأجود أنواع الأسماك وفواكه البحر المحضرة بتتبيلتنا السرية وطهينا التقليدي يومياً.</p>
+            <div class="hero-buttons">
+                <a href="MenuRe.html" class="btn btn-secondary">تصفح المنيو 📋</a>
+                <a href="ContactRes.html" class="btn btn-primary">اطلب الآن 📞</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. كود الـ MENU الحقيقي مع أزرار الفلترة وكروت الأطباق -->
+    <section id="Menu">
+        <div class="menu-header">
+            <span class="sub-title">تصفح قائمتنا</span>
+            <h2>اختر وجبتك المفضلة</h2>
+        </div>
+
+        <!-- أزرار الفئات -->
+        <div class="category-buttons">
+            <button class="btn-category active" data-filter="all">الكل</button>
+            <button class="btn-category" data-filter="pizza">بيتزا بحرية</button>
+            <button class="btn-category" data-filter="burgers">برغر بحري</button>
+            <button class="btn-category" data-filter="drinks">مشروبات</button>
+            <button class="btn-category" data-filter="desserts">تحلية</button>
+        </div>
+
+        <!-- كروت الأطباق -->
+        <div class="menu-items-grid">
+            
+            <!-- وجبة 1: بيتزا بحرية -->
+            <article class="menu-item pizza">
+                <div class="item-image">
+                    <img src="https://unsplash.com" alt="بيتزا">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">بيتزا فواكه البحر</h3>
+                    <p class="item-description">عجينة إيطالية هشة مغطاة بصلصة الطماطم وجبن الموزاريلا والجمبري.</p>
+                    <div class="item-footer">
+                        <span class="item-price">1400 دج</span>
+                        <button class="btn-order-item" data-dish="بيتزا فواكه البحر">اطلب الآن 🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- وجبة 2: برغر بحري -->
+            <article class="menu-item burgers">
+                <div class="item-image">
+                    <img src="https://unsplash.com" alt="برغر">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">برغر السلمون المقرمش</h3>
+                    <p class="item-description">شريحة من سمك السلمون المفروم والمقرمش مع سلطة الكرنب الفريش.</p>
+                    <div class="item-footer">
+                        <span class="item-price">950 دج</span>
+                        <button class="btn-order-item" data-dish="برغر السلمون المقرمش">اطلب الآن 🛒</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- وجبة 3: مشروبات -->
+            <article class="menu-item drinks">
+                <div class="item-image">
+                    <img src="https://unsplash.com" alt="عصير">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">موخيتو بحري منعش</h3>
+                    <p class="item-description">مزيج ساحر ومنعش من الليمون الطازج، أوراق النعناع والصودا.</p>
+                    <div class="item-footer">
+                        <span class="item-price">350 دج</span>
+                        <button class="btn-order-item" data-dish="موخيتو بحري منعش">اطلب الآن 🛒</button>
+                    </div>
+                </div>
+            </article>
+
+              <!-- وجبة 4: تحلية -->
+            <article class="menu-item desserts">
+                <div class="item-image">
+                    <!-- رابط صورة تارت الليمون مجانية جاهزة -->
+                    <img src="https://unsplash.com" alt="تارت الليمون المنعشة">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">تارت الليمون والمورانغ (Lemon Meringue)</h3>
+                    <p class="item-description">عجينة تارت مقرمشة محشية بكريمة الليمون الحامضة والغنية، مغطاة بطبقة من المورانغ الفرنسي الخفيف والمحمر.</p>
+                    <div class="item-footer">
+                        <span class="item-price">400 دج</span>
+                        <!-- زر الطلب (Order button) -->
+                        <button class="btn-order-item" data-dish="تارت الليمون و المورانغ">اطلب الآن 🛒</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ==================== قسم من نحن (About Us Section) ==================== -->
+    <section id="about-us">
+        <div class="about-container">
+            
+            <!-- 1. صورة للمطعم / الأكل -->
+            <div class="about-image">
+                <!-- تقدري تبدلي placeholder.jpg برابط الصورة الحقيقية كي توجد -->
+                <img src="placeholder.jpg" alt="طباخ يحضر طبق مأكولات بحرية طازجة في مطعمنا">
+            </div>
+
+            <!-- 2. المحتوى (Content) -->
+            <div class="about-content">
+                
+                <!-- عنوان صغير: About Us -->
+                <span class="sub-title">About Us</span>
+                
+                <!-- عنوان رئيسي -->
+                <h2>حكايتنا بدأت من شغفنا بخيرات البحر</h2>
+                
+                <!-- فقرة قصيرة -->
+                <p>في مطعمنا، نؤمن أن المأكولات البحرية ليست مجرد وجبة، بل هي تجربة فريدة تجمع بين الطعم الطازج والأصالة. منذ اليوم الأول، التزمنا بجلب صيد اليوم مباشرة من الميناء إلى طبقك، لنوفر لك نكهة حقيقية لا تُنسى وسط أجواء عائلية دافئة.</p>
+                
+                <!-- زر: Learn More -->
+                <a href="#story" class="btn-learn-more">اكتشف قصتنا الكاملة 🌊</a>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== قسم الاتصال (Contact Section) ==================== -->
+    <section id="contact">
+        
+        <!-- عنوان القسم (Title) -->
+        <div class="contact-header">
+            <span class="sub-title">تواصل معنا</span>
+            <h2>يسعدنا دائماً استقبالكم وخدمتكم</h2>
+        </div>
+
+        <div class="contact-wrapper">
+            
+            <!-- معلومات الاتصال الأساسية -->
+            <div class="contact-info">
+                
+                <!-- الهاتف (Phone) -->
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <h3>رقم الهاتف</h3>
+                    <p><a href="tel:+21321XXXXXX">021-XX-XX-XX</a></p>
+                    <p><a href="tel:+213550XXXXXX">0550-XX-XX-XX</a></p>
+                </div>
+
+                <!-- البريد الإلكتروني (Email) -->
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <h3>البريد الإلكتروني</h3>
+                    <p><a href="mailto:info@safinat-albihar.com">info@safinat-albihar.com</a></p>
+                </div>
+
+                <!-- العنوان (Address) -->
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <h3>العنوان</h3>
+                    <p>شارع واجهة البحر، الجزائر العاصمة</p>
+                </div>
+
+                <!-- أوقات العمل (Opening Hours) -->
+                <div class="info-item">
+                    <span class="info-icon">⏰</span>
+                    <h3>أوقات العمل</h3>
+                    <p>كل يوم: من 12:00 ظهراً إلى 11:00 ليلاً</p>
+                </div>
+
+            </div>
+
+            <!-- استمارة الاتصال (Contact Form) -->
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    
+                    <!-- الاسم (Name) -->
+                    <div class="form-group">
+                        <label for="client-name">الاسم الكامل:</label>
+                        <input type="text" id="client-name" name="name" placeholder="اكتب اسمك هنا" required>
+                    </div>
+
+                    <!-- البريد الإلكتروني (Email) -->
+                    <div class="form-group">
+                        <label for="client-email">البريد الإلكتروني:</label>
+                        <input type="email" id="client-email" name="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <!-- الرسالة (Message) -->
+                    <div class="form-group">
+                        <label for="client-message">الرسالة أو تفاصيل الطلب:</label>
+                        <textarea id="client-message" name="message" rows="5" placeholder="اكتب رسالتك أو نوع الطاولة والسمك الذي تريد حجزه..." required></textarea>
+                    </div>
+
+                    <!-- زر الإرسال (Send button) -->
+                    <button type="submit" class="btn-submit">إرسال الرسالة الآن ✨</button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== قسم الأسئلة الشائعة (FAQ Section) ==================== -->
+    <section id="faq">
+        
+        <!-- عنوان القسم (Section title) -->
+        <div class="faq-header">
+            <span class="sub-title">الأسئلة الشائعة</span>
+            <h2>لديك أسئلة؟ لقد أجبنا على أبرزها</h2>
+        </div>
+
+        <!-- حاوية الأسئلة -->
+        <div class="faq-container">
+            
+            <!-- السؤال 1 (Question 1) -->
+            <details class="faq-item" open>
+                <summary class="faq-question">هل الأسماك وثمار البحر عندكم طازجة يومياً؟</summary>
+                <div class="faq-answer">
+                    <p>نعم، بكل تأكيد! نحن نتعامل مباشرة مع الصيادين في الميناء كل صباح لضمان جلب صيد اليوم الطازج، ولا نستخدم الأسماك المجمدة في أطباقنا الرئيسية أبداً.</p>
+                </div>
+            </details>
+
+            <!-- السؤال 2 (Question 2) -->
+            <details class="faq-item">
+                <summary class="faq-question">هل توفرون خدمة التوصيل والطلب الخارجي؟</summary>
+                <div class="faq-answer">
+                    <p>نعم، نوفر خدمة توصيل سريعة واحترافية للمنازل والمكاتب. نستخدم علباً حرارية خاصة تحافظ على سخونة وقرمشة الوجبات وكأنك تتناولها داخل المطعم.</p>
+                </div>
+            </details>
+
+            <!-- السؤال 3 (Question 3) -->
+            <details class="faq-item">
+                <summary class="faq-question">هل يتطلب الحوت المشي في الفرن وقتاً طويلاً للتحضير؟</summary>
+                <div class="faq-answer">
+                    <p>أطباق الفرن والبايلّا تستغرق عادة من 25 إلى 40 دقيقة لأننا نحضرها طازجة خصيصاً لك بعد الطلب. يمكنك الحجز مسبقاً عبر الهاتف لتجد طاولتك جاهزة فور وصولك.</p>
+                </div>
+            </details>
+
+            <!-- السؤال 4 (Question 4) -->
+            <details class="faq-item">
+                <summary class="faq-question">هل المطعم مناسب للعائلات والأطفال؟</summary>
+                <div class="faq-answer">
+                    <p>المطعم مصمم بأجواء بحرية مريحة ودافئة تناسب العائلات تماماً، كما نوفر كراسي مخصصة للأطفال الصغار وقائمة طعام متنوعة ترضي كل الأذواق.</p>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+ <!-- ==================== أسفل الصفحة (Footer Section) ==================== -->
+    <footer id="main-footer">
+        <div class="footer-container">
+            
+            <!-- 1. اللوغو والوصف القصير (Logo & Short Description) -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="#">⚓ سفينة البحار</a>
+                </div>
+                <p class="footer-desc">بوابتك لتذوق خيرات البحر الأبيض المتوسط الطازجة، نحضرها لك يومياً بكل شغف وبأعلى معايير الجودة والنظافة.</p>
+            </div>
+
+            <!-- 2. الروابط السريعة (Quick Links) -->
+            <div class="footer-links">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="HeaderRes.html">الرئيسية</a></li>
+                    <li><a href="About UsRes.html">من نحن</a></li>
+                    <li><a href="MenuRe.html">المنيو</a></li>
+                    <li><a href="WhyChooseUsRes.html">لماذا تختارنا</a></li>
+                    <li><a href="FaqRes.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+
+            <!-- 3. معلومات الاتصال (Contact Information) -->
+            <div class="footer-contact">
+                <h3>معلومات الاتصال</h3>
+                <ul>
+                    <li>📍 شارع واجهة البحر، الجزائر العاصمة</li>
+                    <li>📞 <a href="tel:+21321XXXXXX">021-XX-XX-XX</a></li>
+                    <li>📧 <a href="mailto:info@safinat-albihar.com">info@safinat-albihar.com</a></li>
+                </ul>
+            </div>
+
+            <!-- 4. وسائل التواصل الاجتماعي (Social Media) -->
+            <div class="footer-social">
+                <h3>تابعنا على</h3>
+                <div class="social-icons">
+                    <!-- تقدري تبدلي الرابط # برابط الصفحة الحقيقية للمطعم مبعد -->
+                    <a href="#" target="_blank" aria-label="Facebook">فيسبوك 🟦</a>
+                    <a href="#" target="_blank" aria-label="Instagram">إنستغرام 📸</a>
+                    <a href="#" target="_blank" aria-label="TikTok">تيك توك 🎵</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 5. حقوق النشر (Copyright) -->
+        <div class="footer-copyright">
+            <p>&copy; 2026 مطعم سفينة البحار. جميع الحقوق محفوظة. تم التطوير بكل شغف للمستقبل البرمجي ✨</p>
+        </div>
+    </footer>
+
+
+     <!-- ==================== قسم معرض الصور (Gallery Section) ==================== -->
+    <section id="gallery">
+        
+        <!-- 1. عنوان القسم (Section title) -->
+        <div class="gallery-header">
+            <span class="sub-title">جولة بصرية</span>
+            <h2>معرض أطباقنا وأجوائنا البحرية</h2>
+        </div>
+
+        <!-- 2. الصور (Images) -->
+        <div class="gallery-grid">
+            
+            <!-- الصورة 1: جمبري مشوي فاخر -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="طبق جمبري مشوي بالليمون والأعشاب">
+            </div>
+
+            <!-- الصورة 2: أسماك طازجة في الميناء -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="أسماك طازجة معروضة على الثلج صيد اليوم">
+            </div>
+
+            <!-- الصورة 3: طبق سمك السلمون المشوي -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="فيليه سمك السلمون المشوي مع الخضار">
+            </div>
+
+            <!-- الصورة 4: أجواء المطبخ وتحضير الطعام -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="طاهي يحضر وجبة مأكولات بحرية على الفحم">
+            </div>
+
+            <!-- الصورة 5: طبق فواكه البحر المشكلة -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="طبق مشكل من ثمار البحر والكالاماري والبلح">
+            </div>
+
+            <!-- الصورة 6: طاولة عشاء في المطعم -->
+            <div class="gallery-item">
+                <img src="https://unsplash.com" alt="طاولة عشاء منظمة داخل المطعم بأجواء دافئة">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==================== قسم الأطباق الشعبية (Popular Dishes) ==================== -->
+    <section id="popular-dishes">
+        <div class="section-header">
+            <span class="sub-title">الأكثر مبيعاً</span>
+            <h2>أطباقنا الشهيرة المفضلة لدى الزبائن</h2>
+        </div>
+
+        <div class="dishes-grid">
+            
+            <!-- الطبق الأول (Dish 1) -->
+            <article class="dish-card">
+                <div class="dish-image">
+                    <img src="dish1.jpg" alt="طبق بايلّا ثمار البحر الإسبانية الغنية">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">بايلّا البحر الملكية (Paella)</h3>
+                    <p class="dish-description">أرز إسباني فاخر مطبوخ على نار هادئة مع الجمبري، الكالاماري، بلح البحر، وخلطة الزعفران الأصلية.</p>
+                    <span class="dish-price">2500 دج</span>
+                </div>
+            </article>
+
+            <!-- الطبق الثاني (Dish 2) -->
+            <article class="dish-card">
+                <div class="dish-image">
+                    <img src="dish2.jpg" alt="صينية سمك القاروص المشوي في الفرن">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">صينية سمك القاروص (Loup de Mer)</h3>
+                    <p class="dish-description">سمك القاروص الطازج متبل بالثوم، الليمون، وزيت الزيتون البكر، ومطهو في الفرن مع الخضار الموسمية.</p>
+                    <span class="dish-price">1800 دج</span>
+                </div>
+            </article>
+
+            <!-- الطبق الثالث (Dish 3) -->
+            <article class="dish-card">
+                <div class="dish-image">
+                    <img src="dish3.jpg" alt="بوراك مقرمش محشي بالجمبري والجبن">
+                </div>
+                <div class="dish-info">
+                    <h3 class="dish-name">بوراك مقرمش بالجمبري </h3>
+                    <p class="dish-description">ديول جزائرية تقليدية مقرمشة، محشية بقطع الجمبري الطري، كريمة البيشاميل والجبن الذائب.</p>
+                    <span class="dish-price">450 دج</span>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- زر تصفح المنيو الكامل (View Full Menu) -->
+        <div class="view-menu-action">
+            <a href="MenuRe.html" class="btn-view-menu">عرض المنيو الكامل 📋</a>
+        </div>
+    </section>
+
+
+<!-- ==================== قسم آراء الزبائن (Testimonials Section) ==================== -->
+    <section id="testimonials">
+        
+        <!-- 1. عنوان القسم (Section title) -->
+        <div class="testimonials-header">
+            <span class="sub-title">آراء زبائننا</span>
+            <h2>ماذا يقول عشاق المأكولات البحرية عن تجربتهم؟</h2>
+        </div>
+
+        <!-- حاوية آراء الزبائن -->
+        <div class="testimonials-grid">
+            
+            <!-- الزبون الأول (Client 1) -->
+            <article class="testimonial-card">
+                <!-- التقييم (Rating) -->
+                <div class="client-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                </div>
+                <!-- التعليق (Comment) -->
+                <p class="client-comment">"البايلّا عندهم حكاية وحدها! المأكولات البحرية طازجة والخدمة سريعة بزاف. عجبني النقاء والترحاب، أكيد راح نرجع للمطعم مع العائلة."</p>
+                <!-- الاسم (Name) -->
+                <h3 class="client-name">محمد أمين</h3>
+            </article>
+
+            <!-- الزبون الثاني (Client 2) -->
+            <article class="testimonial-card">
+                <!-- التقييم (Rating) -->
+                <div class="client-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star empty">☆</span>
+                </div>
+                <!-- التعليق (Comment) -->
+                <p class="client-comment">"برغر السلمون المقرمش فكرة هبال وجديدة! التتبيلة سرية وصح بنينة. التوصيل كان سريع والأكل وصل سخون ومقرمش كأني في المطعم."</p>
+                <!-- الاسم (Name) -->
+                <h3 class="client-name">سارة بوحميد</h3>
+            </article>
+
+            <!-- الزبون الثالث (Client 3) -->
+            <article class="testimonial-card">
+                <!-- التقييم (Rating) -->
+                <div class="client-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                </div>
+                <!-- التعليق (Comment) -->
+                <p class="client-comment">"أفضل مطعم سمك زرتو هذا العام، صيد اليوم دايماً طازج ونقي. تارت الليمون مع المورانغ ختامها مسك، ننصح بيه أي واحد يحب الحوت ديريكت من الميناء."</p>
+                <!-- الاسم (Name) -->
+                <h3 class="client-name">سامي بن ناصر</h3>
+            </article>
+
+        </div>
+    </section>
+
+
+
+
+      <!-- ==================== قسم لماذا تختارنا؟ (Why Choose Us) ==================== -->
+    <section id="why-choose-us">
+        <div class="section-header">
+            <span class="sub-title">مميزاتنا</span>
+            <h2>لماذا يفضل الزبائن مطعمنا؟</h2>
+        </div>
+
+        <div class="features-grid">
+            
+            <!-- الميزة 1: Fresh Ingredients -->
+            <div class="feature-card">
+                <div class="feature-icon">🐟</div>
+                <h3>مكونات طازجة يومياً</h3>
+                <p>نحن لا نساوم على الجودة؛ نجلب أسماكنا وثمار البحر يومياً من الميناء مباشرة لضمان نكهة البحر الحقيقية في كل طبق.</p>
+            </div>
+
+            <!-- الميزة 2: Experienced Chefs -->
+            <div class="feature-card">
+                <div class="feature-icon">👨‍🍳</div>
+                <h3>طهاة ذوي خبرة</h3>
+                <p>أطباقنا تُحضر بأيدي أمهر الطهاة المحترفين المتخصصين في المأكولات البحرية، والذين يدمجون بين الأصالة واللمسة العصرية.</p>
+            </div>
+
+            <!-- الميزة 3: Fast Delivery -->
+            <div class="feature-card">
+                <div class="feature-icon">🛵</div>
+                <h3>توصيل سريع وساخن</h3>
+                <p>نوفر خدمة توصيل احترافية وسريعة تضمن وصول وجبتك البحرية المفضلة إليك وهي بكامل سخونتها وقرمشتها وكأنك في المطعم.</p>
+            </div>
+
+            <!-- الميزة 4: Quality & Hygiene -->
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>الجودة والنظافة</h3>
+                <p>نطبق معايير صارمة جداً في النظافة والتعقيم داخل مطابخنا، ونختار كل المكونات بعناية فائقة لضمان سلامة وصحة عائلتك.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- زر العودة للأعلى السحري مبرمج بالـ ID الصحيح -->
+    <button id="back-to-top" class="back-to-top-btn">⬆️</button>
+
+    <!-- سطر تشغيل الجافاسكريبت في الأسفل تماماً -->
+    <script src="Index.js"></script>
+</body>
+</html>
